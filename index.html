@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stickman Studio Publisher</title>
+<style>
+  :root { --bg:#fafafa; --fg:#1a1a1a; --muted:#555; --accent:#c00; --card:#fff; --line:#e3e3e3; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#121212; --fg:#eee; --muted:#aaa; --accent:#ff4e45; --card:#1c1c1c; --line:#333; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:40px 16px; }
+  h1 { margin:0 0 4px; font-size:30px; } .sub { color:var(--muted); margin:0 0 28px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 22px; margin:0 0 18px; }
+  .yt { display:inline-flex; align-items:center; gap:8px; font-weight:600; }
+  .yt svg { width:28px; height:20px; }
+  nav a, a { color:var(--accent); } nav { display:flex; gap:18px; flex-wrap:wrap; margin:0 0 24px; font-weight:600; }
+  footer { color:var(--muted); font-size:14px; border-top:1px solid var(--line); padding-top:16px; margin-top:30px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Stickman Studio Publisher</h1>
+  <p class="sub">A private publishing and analytics tool for two Czech YouTube channels: <b>Tvýma očima</b> and <b>Neotvírej</b>.</p>
+  <nav>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>
+    <a href="https://policies.google.com/privacy">Google Privacy Policy</a>
+  </nav>
+
+  <div class="card">
+    <p class="yt"><svg viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="#FF0000"/><path d="M11 5.5v9l8-4.5z" fill="#fff"/></svg> Uses YouTube API Services</p>
+    <p>This tool uses the YouTube Data API v3 and the YouTube Analytics API. By using it you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of data is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+  </div>
+
+  <div class="card">
+    <h2>What it does</h2>
+    <ul>
+      <li>Uploads finished videos and Shorts to the owner's own channels.</li>
+      <li>Sets titles, descriptions, tags, thumbnails, playlists and scheduled publish times.</li>
+      <li>Reads the owner's own YouTube Analytics (views, watch time, audience retention, traffic sources) to plan future videos.</li>
+    </ul>
+    <h2>Who uses it</h2>
+    <p>Only the channel owner. The tool runs locally on the owner's computer, is not offered, sold or distributed to anyone else, and only accesses channels the owner signs in with through Google OAuth 2.0.</p>
+  </div>
+
+  <footer>
+    Stickman Studio Publisher · independent creator tool, Czech Republic ·
+    Contact: <a href="mailto:nexuscz150@gmail.com">nexuscz150@gmail.com</a> ·
+    <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a>
+  </footer>
+</main>
+</body>
+</html>
